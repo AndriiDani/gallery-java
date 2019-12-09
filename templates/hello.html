@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Hello{% endblock %}
+{% block content %}
+	<section class="hello-body">
+		<p>Привіт {{ values[0] }}  {{ values[1] }}</p>
+		<hr>
+		<p>Ви освоїли функціонал за {{ values[2] }} секунд</p>
+		<hr>
+		<p>Середній час освоєння: {{ values[3] }} секунд</p>
+	</section>
+{% endblock %}

@@ -1,0 +1,10 @@
+body {
+	background: grey;
+}
+
+p {
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 20px;
+	color: #fff;
+}

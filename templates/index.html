@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+	<section class="index-body">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">З201 Данилюк</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu w-5" aria-labelledby="navbarDropdown">
+							<form method="POST">
+								<div class="form-group">
+									<label for="name">Ваше ім'я</label>
+									<input type="text" class="form-control" name="name" id="name">
+								</div>
+								<div class="form-group">
+									<label for="surname">Ваше прізвище</label>
+									<input type="text" class="form-control" name="surname" id="surname">
+								</div>
+								<button type="submit" class="btn btn-primary">Підтвердити</button>
+							</form>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<h1 class="index-body__title text-center mt-5">Привіт, зареєструйся!</h1>
+	</section>
+{% endblock %}
